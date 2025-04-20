@@ -24,12 +24,14 @@ const NavBar = () => {
         // bgClip={"text"}
         fontWeight="extrabold"
         >
-                Product Store
+                <Link to={"/"}>
+                    Product Store
+                </Link>
         </Text>
     
         <HStack spacing={2} alignItems={"center"}>
             <Link to={"/create"}>
-                <IconButton variant={"outline"}>
+                <IconButton variant={"outline"} size={"sm"}>
                     <LuCirclePlus />
                 </IconButton>
             </Link>
